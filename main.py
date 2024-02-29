@@ -11,7 +11,14 @@ from telethon.tl.types import PeerChannel
 from telegram.scraper import scrape_channel
 from telegram.processor import process_messages
 from config import create_engine,db_uri
+import sqlalchemy
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy import create_engine
+
 engine = create_engine(db_uri)
+
+Session = sessionmaker(bind=engine)
+session = Session()
 
 
 

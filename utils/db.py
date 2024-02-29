@@ -5,8 +5,6 @@
 # to relational database tables.
 # utils/db.py
 
-from sqlalchemy.ext.declarative import declarative_base
-Base = declarative_base()
 
 
-engine = create_engine(db_uri)
+

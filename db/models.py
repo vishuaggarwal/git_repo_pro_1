@@ -5,8 +5,14 @@ from sqlalchemy import Column, Integer, String
 import sqlalchemy.ext.declarative
 from sqlalchemy.ext.declarative import declarative_base  
 from utils.db import Base
+import sqlalchemy
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.orm import declarative_base
 
 Base = declarative_base()
+
+engine = sqlalchemy.create_engine('mysql+mysqlconnector://user:password@localhost/dbname')
+
 
 class TelegramMessage(Base):
     __tablename__ = 'telegram_messages'
