@@ -2,7 +2,10 @@ from telegram.filters import filter_messages
 from db import session
 from db.models import Message
 
-
+def process_historical(messages):
+   for msg in messages:
+      if msg.date < min_id or msg.id not in message_ids:
+         yield msg
 def is_new(msg, session):
 
   return msg.id not in {m.id for m in session.query(Message.id)}

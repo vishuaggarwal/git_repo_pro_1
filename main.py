@@ -8,8 +8,8 @@ from telegram.client import init_telegram_client, client
 from telegram.handlers import handle_new_messages
 from datetime import datetime, timedelta
 from telethon.tl.types import PeerChannel
-from telegram.scraper import scrape_channel
-from telegram.processor import process_messages
+from telegram.scraper import scrape_channel, scrape_history
+from telegram.processor import process_messages, process_historical
 from config import create_engine,db_uri
 import sqlalchemy
 from sqlalchemy.orm import sessionmaker
@@ -24,6 +24,11 @@ session = Session()
 
 def is_first_run(session):
   return session.query(Message).count() == 0   
+
+if args.initial_scrape:
+   for batch in scrape_history(start_date, end_date):
+      for new_msg in process_historical(batch):
+         session.bulk_insert(new_msg) 
 
 
 async def scrape_all_channels():
