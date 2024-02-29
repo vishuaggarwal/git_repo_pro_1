@@ -10,7 +10,8 @@ from datetime import datetime, timedelta
 from telethon.tl.types import PeerChannel
 from telegram.scraper import scrape_channel
 from telegram.processor import process_messages
-
+from config import create_engine,db_uri
+engine = create_engine(db_uri)
 
 
 
