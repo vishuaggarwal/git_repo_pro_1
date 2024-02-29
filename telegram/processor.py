@@ -1,6 +1,5 @@
 from telegram.filters import filter_messages
-from db import session
-from db.models import Message
+from db.models import TelegramMessage as Message, Session
 min_id = None
 
 def process_historical(messages):

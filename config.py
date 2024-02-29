@@ -5,8 +5,7 @@ import sqlalchemy
 import os
 load_dotenv()
 
-
-db_uri = 'mysql+mysqlconnector://user:password@localhost/dbname'
+db_uri = 'mysql+asyncmy://root@localhost:3306/test.db'
 
 def create_engine(db_uri):
   return sqlalchemy.create_engine(db_uri) 

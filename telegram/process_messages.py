@@ -1,3 +1,7 @@
+
+### cron to this in linux "0 0 * * * python /path/to/process_messages.py"
+
+
 import asyncio
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine

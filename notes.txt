@@ -1,0 +1,57 @@
+The ModuleNotFoundError: No module named 'asyncmy' error occurs when you try to import the asyncmy module, but the module is not installed.
+
+To fix this error, you need to install the asyncmy module. You can do this using the following command:
+
+pip install asyncmy
+Once you have installed the asyncmy module, you should be able to import it without any errors.
+
+Here is an example of a Python script that uses the asyncmy module to interact with a MySQL database:
+
+import asyncio
+
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from asyncmy import pool
+
+# Create a connection pool
+pool = pool.Pool(
+    user="user",
+    password="password",
+    host="host",
+    port=3306,
+    database="database",
+)
+
+# Create an engine
+engine = create_engine(
+    "mysql+asyncmy://",
+    creator=lambda: pool.connect(),
+    # Other engine options
+)
+
+# Create a sessionmaker
+Session = sessionmaker (bind=engine)
+
+async def main():
+    # Create a session
+    async with Session() as session:
+        # Query the database
+        results = await session.execute(
+            "SELECT * FROM users"
+        )
+
+        # Print the results
+        for row in results:
+            print(row)
+
+asyncio.run(main())
+This script will create a connection pool, an engine, and a sessionmaker. It will then create a new database session, query the database for all users, and print the results.
+
+Note that the asyncmy module is still in development, and it may not be compatible with all versions of Python or MySQL. If you encounter any problems using the asyncmy module, you can try using the aiomysql module instead.
+
+
+To install this asyncmy on windows Download the build tools from this url -> https://visualstudio.microsoft.com/visual-cpp-build-tools/
+Rename this file to vs_buildtools.exe
+now execute this command
+vs_buildtools.exe --norestart --passive --downloadThenInstall --includeRecommended --add Microsoft.VisualStudio.Workload.NativeDesktop --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Workload.MSBuildTools
+ 

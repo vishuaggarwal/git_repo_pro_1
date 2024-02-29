@@ -4,10 +4,15 @@ import sqlalchemy
 from sqlalchemy import Column, Integer, String
 import sqlalchemy.ext.declarative
 from sqlalchemy.ext.declarative import declarative_base  
-from utils.db import Base
 import sqlalchemy
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import declarative_base
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+
+engine= create_engine("mysql+asyncmy://root@localhost:3306/test.db")
+Session = sessionmaker(bind=engine)
+
 
 Base = declarative_base()
 

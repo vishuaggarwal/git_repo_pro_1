@@ -3,26 +3,16 @@
 from telegram.filters import filter_messages
 import asyncio, sqlalchemy, argparse
 from telethon import events
-from db.models import Session, engine, Base, TelegramChannel, Message
-from telegram.client import init_telegram_client, client
+from db.models import Session, engine, Base, TelegramChannel, TelegramMessage as Message
+from telegram.client import init_telegram_client
 from telegram.handlers import handle_new_messages
 from datetime import datetime, timedelta
 from telegram.scraper import scrape_channel, scrape_history
 from telegram.processor import process_messages, process_historical
-from config import create_engine,db_uri
+from config import create_engine, db_uri
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
-
-# Import modules
-from db import Session, engine, Base   
-
-
-
-engine = create_engine(db_uri)
-
-Session = sessionmaker(bind=engine)
 session = Session()
-
 
 
 def is_first_run(session):
@@ -66,9 +56,10 @@ async def scrape_all_channels():
 
   await asyncio.gather(*scraping_tasks)
 
-@client.on(events.NewMessage)   
-async def handler(event):
-  await scrape_all_channels()
+  @client.on(events.NewMessage)   
+  async def handler(event):
+    await scrape_all_channels()
+  
 
 
 async def main():
@@ -109,7 +100,7 @@ async def main():
   print('Started!')
 
   await client.run_until_disconnected()
-
+  client = await init_telegram_client()
 
 async def save_message(msg, session):
   if msg.id not in []:
