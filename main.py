@@ -1,19 +1,22 @@
 # main.py
 
 from telegram.filters import filter_messages
-import asyncio
+import asyncio, sqlalchemy, argparse
 from telethon import events
 from db.models import Session, engine, Base, TelegramChannel, Message
 from telegram.client import init_telegram_client, client
 from telegram.handlers import handle_new_messages
 from datetime import datetime, timedelta
-from telethon.tl.types import PeerChannel
 from telegram.scraper import scrape_channel, scrape_history
 from telegram.processor import process_messages, process_historical
 from config import create_engine,db_uri
-import sqlalchemy
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
+
+# Import modules
+from db import Session, engine, Base   
+
+
 
 engine = create_engine(db_uri)
 
@@ -25,12 +28,28 @@ session = Session()
 def is_first_run(session):
   return session.query(Message).count() == 0   
 
+#############################################################
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--initial_scrape", action="store_true",help="Perform an initial scrape of historical data.")
+parser.add_argument("--start_date", type=str,help="The start date for the historical scrape.")
+parser.add_argument("--end_date", type=str,help="The end date for the historical scrape.")
+
+args = parser.parse_args()
+start_date = args.start_date
+end_date = args.end_date
+
 if args.initial_scrape:
-   for batch in scrape_history(start_date, end_date):
-      for new_msg in process_historical(batch):
-         session.bulk_insert(new_msg) 
+   for batch in  scrape_history(start_date, end_date):
+      new_msgs = []
+      for msg in process_historical(batch):
+         new_msgs.append(msg)
+      session.bulk_insert(new_msgs) 
 
 
+##############################################################
+         
 async def scrape_all_channels():
   channel_ids = []
   
@@ -93,15 +112,9 @@ async def main():
 
 
 async def save_message(msg, session):
-
-  # Check if get_existing_ids is defined and handle appropriately
-  
-
   if msg.id not in []:
     print('Saving new message...')   
     session.add(Message(id=msg.id, text=msg.text))
     await session.commit()
 
-# Import modules
-from db import Session, engine, Base   
-from telegram.client import client
+

@@ -11,9 +11,6 @@ from sqlalchemy.orm import declarative_base
 
 Base = declarative_base()
 
-engine = sqlalchemy.create_engine('mysql+mysqlconnector://user:password@localhost/dbname')
-
-
 class TelegramMessage(Base):
     __tablename__ = 'telegram_messages'
     
