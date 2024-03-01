@@ -5,13 +5,15 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from  sqlalchemy.ext.asyncio import AsyncSession
 from db.models import TelegramMessage as Message
-from db.models import Session
+from db.models import Database
 from telegram.processor import process_messages, process_historical
+
+database = Database()
 
 async def main():
     try:
         # Create an engine and session for the database
-        async with Session() as session:
+        async with database.Session() as session:
             # Get the minimum ID of the messages that have already been processed
             min_id = session.query(Message.id).order_by(Message.id).first()
 
