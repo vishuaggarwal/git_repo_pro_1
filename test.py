@@ -1,29 +1,29 @@
-from filters import filter_messages
+import asyncio
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy import create_engine
+from sqlalchemy.ext.asyncio import AsyncSession
 from db.models import TelegramMessage as Message
+from db.models import Database
+from telegram.processor import process_messages, process_historical
 
-min_id = 0  # Initialize this with your value
+database = Database()
 
-def process_historical(messages):
-    for msg in messages:
-        if msg.date < min_id:  # Compare with actual value
-            yield msg
-
-async def is_new(msg, session):
-    return not await session.query(Message.id).filter(Message.id == msg.id).first()
-
-async def process_messages(messages, session):
+async def main():
     try:
-        filtered = filter_messages(messages)
-        for msg in filtered:
-            await save_message(msg, session)
-    except Exception as e:
-        print(e)
-
-async def save_message(msg, session):
-    try:
-        if await is_new(msg, session):
-            new = Message(id=msg.id, text=msg.text)
-            session.add(new)
+        # Create an engine and session for the database
+        async with database.Session() as session:
+            # Get the minimum ID of the messages that have been processed
+            min_id = session.query(Message.id).order_by(Message.id).first()
+            if min_id is not None: # Assuming you need min_id for process_historical
+                messages = process_historical(min_id)
+                # Check if the messages are not None or empty
+                if messages: 
+                    await process_messages(messages, session)
+            
+            # Committing the changes in with block
             await session.commit()
-    except Exception as e:
-        print(f'error saving message: {e}')
+    except Exception as e: 
+        print(f"Error occurred while processing messages: {e}")
+
+if __name__ == "__main__":
+    asyncio.run(main())
