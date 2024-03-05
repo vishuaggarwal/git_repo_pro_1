@@ -20,7 +20,7 @@ async def handle_new_messages(event, session):
     # Creating new instance of TelegramMessage with details from the new message
     new_message = TelegramMessage(
       chat_id=message.chat_id,  # chat id from obtained message
-      text=message.text         # text from obtained message
+      message=message.text         # text from obtained message
     )
 
     # Add new instance of TelegramMessage to the session for commit

@@ -14,6 +14,7 @@ from sqlalchemy.future import select
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from telethon import events
+from datetime import datetime, timezone, timedelta
 # Import User defined module
 from db.models import Base, TelegramChannel, TelegramMessage as Message
 from telegram.client import init_telegram_client
@@ -22,6 +23,18 @@ from telegram.scraper import scrape_channel, scrape_history
 from telegram.processor import process_messages, process_historical
 from telegram.filters import filter_messages
 from db.models import Database
+
+#from datetime import datetime
+#import pytz
+
+#def convert_datetime_to_ist(datetime_str): 
+#    utc_datetime = datetime.strptime(datetime_str, "%Y-%m-%d %H:%M:%S%z")
+#    ist_timezone = pytz.timezone("Asia/Kolkata")
+#    ist_datetime  = utc_datetime.astimezone(ist_timezone)
+#    return ist_datetime
+
+
+#print(convert_datetime("2024-03-02 12:46:51+00:00"))
 
 # Get the instance of Database
 database = Database()
@@ -49,7 +62,7 @@ async def main():
             # Check if it is first run or not
             if await is_first_run(Session):
                 # If first run then get message from the provided channels
-                channel_ids = []
+                channel_ids = [-1002071547337]
                 for channel_id in channel_ids:
                     try:
                         messages = await client.get_messages(channel_id)                        
@@ -104,11 +117,21 @@ async def main():
 async def save_message(msg, Session):
     if msg.id not in []:
         print('Saving new message...')
+        print("############## MSG DATA #################")
+        print(f'MSG_ID = {msg.id}')
+        print(f'MSG_DATE = {msg.date}')
+        print(f'MSG_DATE_type = {type(msg.date)}')
+        print(f'MSG_DATA = {msg.peer_id.channel_id}')
+        print("#########################################")
         try:
             async with Session() as session:
                 async with session.begin():
-                    # Insert new message in DB
-                    session.add(Message(id=msg.id, text=msg.text))
+                    session.add(Message(
+                        msg_id=msg.id, 
+                        message=msg.text, 
+                        chnl_id=msg.peer_id.channel_id,
+                        msg_date=msg.date
+                    ))
         except Exception as e:
             print(e)
 

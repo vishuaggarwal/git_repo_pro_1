@@ -52,7 +52,7 @@ async def save_message(msg, session):
         # Check if the message is new
         if await is_new(msg, session):
             # If the message is new, prepare to save it to the database
-            new = Message(id=msg.id, text=msg.text)
+            new = Message(id=msg.id, message=msg.text)
             # Add the new message to the database session
             session.add(new)
             # Commit the session to save the message in the database

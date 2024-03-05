@@ -4,14 +4,14 @@
 ######################################################################
 # db/models.py
 # Import necessary modules for database operations
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, DateTime
 from sqlalchemy.orm import scoped_session, sessionmaker, declarative_base
 # Import aiomysql's sqlalchemy engine, asynccontextmanager, and sqlalchemy's asyncio extension
 from aiomysql.sa import create_engine as create_sqlalchemy_engine
 from contextlib import asynccontextmanager
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 # Additional import aiomysql for database operations
-import aiomysql
+from datetime import datetime
 
 # Define a Database class to handle database connections and operations
 class Database:
@@ -61,9 +61,12 @@ class TelegramMessage(Base):
     # each one is instance of Column and takes a type as its first argument, declares it as primary key
     id = Column(Integer, primary_key=True)
     # Chat id of the messages
-    chat_id = Column(Integer) 
+    msg_id = Column(Integer)
     # The actual message body
     message = Column(String(255))
+    chnl_id = Column(Integer)
+    msg_date = Column(DateTime, default=datetime.utcnow)
+
 
 class TelegramChannel(Base):
     # Define a model for Telegram channels
