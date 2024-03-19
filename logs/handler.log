@@ -1,0 +1,272 @@
+2024-03-17 14:51:21,351 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 153, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 14:52:48,170 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 153, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 14:52:48,178 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 153, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 14:52:58,548 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 153, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 15:30:56,401 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 151, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 20:44:02,075 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 20:44:05,331 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 20:49:03,105 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 20:49:09,128 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 20:49:10,505 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 20:49:11,096 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 20:49:48,925 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 20:49:48,939 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:03:35,108 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:06:45,789 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:06:48,261 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:06:51,005 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:06:51,840 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:07:10,398 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:08:00,998 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:08:07,825 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:08:18,107 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:08:18,108 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:08:18,108 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:08:18,109 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:08:41,327 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:08:43,031 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:08:54,555 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:09:04,717 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:09:09,233 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:10:03,687 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:11:36,660 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:13:05,645 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+2024-03-17 21:14:23,285 - handler - ERROR - Error in handler function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 115, in handler
+    if message.id > last_msg_id_today:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 3922, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined

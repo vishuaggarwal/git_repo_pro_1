@@ -1,0 +1,660 @@
+2024-03-12 17:26:12,809 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:12,815 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:12,818 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:12,819 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:12,821 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:12,822 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:12,823 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:17,824 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:17,825 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:17,825 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:33,223 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:33,224 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:33,225 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:33,227 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:33,229 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:33,230 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:33,231 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:38,014 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:38,025 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:38,026 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:54,711 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:54,712 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:54,713 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:54,714 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:54,715 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:54,717 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:54,718 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:59,317 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:59,317 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:26:59,318 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:14,155 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:14,156 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:14,157 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:14,158 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:14,159 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:14,159 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:14,160 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:19,161 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:19,162 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:19,162 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:34,779 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:34,780 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:34,780 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:34,781 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:34,782 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:34,783 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:34,783 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:39,323 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:39,324 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:39,325 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:54,011 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:54,011 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:54,012 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:54,012 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:54,013 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:54,013 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:54,014 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:58,774 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:58,775 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:27:58,776 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:14,285 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:14,286 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:14,286 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:14,287 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:14,287 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:14,288 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:14,288 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:20,015 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:20,016 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:20,016 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:34,898 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:34,899 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:34,899 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:34,900 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:34,900 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:34,901 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:34,902 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:39,102 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:39,103 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:39,103 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:53,634 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:53,635 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:53,635 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:53,636 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:53,636 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:53,637 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:53,637 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:58,518 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:58,519 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:28:58,519 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:13,453 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:13,454 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:13,454 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:13,455 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:13,455 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:13,456 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:13,456 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:17,988 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:17,988 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:17,989 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:33,716 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:33,717 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:33,717 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:33,718 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:33,718 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:33,719 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:33,719 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:38,935 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:38,937 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'
+2024-03-12 17:29:38,938 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 191, in save_message
+    chnl_id=msg['chat_id'],
+            ~~~^^^^^^^^^^^
+KeyError: 'chat_id'

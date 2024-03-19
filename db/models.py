@@ -1,14 +1,16 @@
+# db/models.py
+
+
 # This code describes the Database models for Telegram messages 
 # and channels. It also sets up a Database class for creating and 
 # handling connections and tables in the database.
 ######################################################################
-# db/models.py
+
 # Import necessary modules for database operations
-from sqlalchemy import Column, Integer, String, DateTime
-from sqlalchemy.orm import scoped_session, sessionmaker, declarative_base
+from sqlalchemy import Column, ForeignKey, Integer, String, DateTime, BigInteger, Float
+from sqlalchemy.orm import scoped_session, relationship, sessionmaker, declarative_base
 # Import aiomysql's sqlalchemy engine, asynccontextmanager, and sqlalchemy's asyncio extension
 from aiomysql.sa import create_engine as create_sqlalchemy_engine
-from contextlib import asynccontextmanager
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 # Additional import aiomysql for database operations
 from datetime import datetime
@@ -53,27 +55,79 @@ async def init_db():
 # Creating Base model which offers essential ORM functionality
 Base = declarative_base()
 
-class TelegramMessage(Base):
-    # Defining a model for Telegram messages
-    # Name of the table as it appears in database
-    __tablename__ = 'telegram_messages'
-    # Declare Column(S) which are essentially fields in the database table;
-    # each one is instance of Column and takes a type as its first argument, declares it as primary key
+class TelegramChannel(Base):
+    __tablename__ = 'telegram_channels'
     id = Column(Integer, primary_key=True)
-    # Chat id of the messages
-    msg_id = Column(Integer)
-    # The actual message body
+    name = Column(String(255))
+    chnl_id = Column(BigInteger, unique=True)  # Making the `chnl_id` unique
+    chnl_type = Column(String(255))
+    messages = relationship("TelegramMessage", back_populates="channel") 
+    sentiment_messages = relationship("TelegramSentimentMessage", back_populates="channel")
+
+class TelegramMessage(Base):
+    __tablename__ = 'telegram_messages'
+    id = Column(Integer, primary_key=True)
+    msg_id = Column(Float)
+    ent_1 = Column(Float)
+    ent_2 = Column(Float)
+    ent_3 = Column(Float)
+    tar_1 = Column(Float)
+    tar_2 = Column(Float)
+    tar_3 = Column(Float)
+    tar_4 = Column(Float)
+    tar_5 = Column(Float)
+    tar_6 = Column(Float)
+    tar_7 = Column(Float)
+    tar_8 = Column(Float)
+    tar_9 = Column(Float)
+    stop = Column(Float)
+    lev_val = Column(String(255))
+    lev_type = Column(String(255))
+    pos_type = Column(String(255))
+    ticker = Column(String(255))
+    chnl_id = Column(BigInteger, ForeignKey('telegram_channels.chnl_id'))  # Creating foreign key with `chnl_id`
+    msg_date = Column(DateTime, default=datetime.utcnow)
+    channel = relationship("TelegramChannel", back_populates="messages")
+class TelegramSentimentMessage(Base):
+    __tablename__ = 'telegram_sentiment_messages'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    msg_id = Column(Float)
     message = Column(String(255))
-    chnl_id = Column(Integer)
+    msg_date = Column(DateTime, default=datetime.utcnow)
+    chnl_id = Column(BigInteger, ForeignKey('telegram_channels.chnl_id'))  # Creating foreign key with `chnl_id`
+    channel = relationship("TelegramChannel", back_populates="sentiment_messages")
+
+############################## Previous Message Histoy Tables ##############################
+
+class TelegramMessageHistory(Base):
+    __tablename__ = 'telegram_messages_history'
+    id = Column(Integer, primary_key=True)
+    msg_id = Column(Float)
+    ent_1 = Column(Float)
+    ent_2 = Column(Float)
+    ent_3 = Column(Float)
+    tar_1 = Column(Float)
+    tar_2 = Column(Float)
+    tar_3 = Column(Float)
+    tar_4 = Column(Float)
+    tar_5 = Column(Float)
+    tar_6 = Column(Float)
+    tar_7 = Column(Float)
+    tar_8 = Column(Float)
+    tar_9 = Column(Float)
+    stop = Column(Float)
+    lev_val = Column(String(255))
+    lev_type = Column(String(255))
+    pos_type = Column(String(255))
+    ticker = Column(String(255))
+    chnl_id = Column(BigInteger) 
     msg_date = Column(DateTime, default=datetime.utcnow)
 
-
-class TelegramChannel(Base):
-    # Define a model for Telegram channels
-    __tablename__ = 'telegram_channels'
-    # Channel ID set as primary key
-    id = Column(Integer, primary_key=True)
-    # Name of the channel
-    name = Column(String(255))
-    # Integer ID of the channel, not nullable and default value (-1)
-    chnl_id = Column(Integer, nullable=False, default=-1)
+class TelegramSentimentMessageHistory(Base):
+    __tablename__ = 'telegram_sentiment_messages_history'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    msg_id = Column(Float)
+    message = Column(String(255))
+    msg_date = Column(DateTime, default=datetime.utcnow)
+    chnl_id = Column(BigInteger)  
+    

@@ -1,0 +1,1350 @@
+2024-03-10 18:54:37,257 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 138, in save_message
+    async with session.begin():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 1867, in __aexit__
+    await greenlet_spawn(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 199, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 146, in __exit__
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 144, in __exit__
+    self.commit()
+  File "<string>", line 2, in commit
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4431, in _flush
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1408, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 513, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1630, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1839, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1979, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2335, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+[SQL: INSERT INTO telegram_messages (msg_id, ent_1, ent_2, ent_3, tar_1, tar_2, tar_3, tar_4, tar_5, tar_6, tar_7, tar_8, tar_9, stop, lev_val, lev_type, pos_type, ticker, chnl_id, msg_date) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (4086, 0.315, 0.305, None, 0.325, 0.335, 0.345, 0.355, 0.365, None, None, None, None, 0.298, None, 'cross', 'LONG', 'COIN', -1002130335326, datetime.datetime(2024, 3, 10, 18, 54, 36, tzinfo=datetime.timezone.utc))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-03-10 18:54:38,189 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 138, in save_message
+    async with session.begin():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 1867, in __aexit__
+    await greenlet_spawn(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 199, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 146, in __exit__
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 144, in __exit__
+    self.commit()
+  File "<string>", line 2, in commit
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4431, in _flush
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1408, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 513, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1630, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1839, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1979, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2335, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+[SQL: INSERT INTO telegram_messages (msg_id, ent_1, ent_2, ent_3, tar_1, tar_2, tar_3, tar_4, tar_5, tar_6, tar_7, tar_8, tar_9, stop, lev_val, lev_type, pos_type, ticker, chnl_id, msg_date) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (4087, 0.315, 0.305, None, 0.325, 0.335, 0.345, 0.355, 0.365, None, None, None, None, 0.298, None, 'cross', 'LONG', 'COIN', -1002130335326, datetime.datetime(2024, 3, 10, 18, 54, 37, tzinfo=datetime.timezone.utc))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-03-10 18:57:18,657 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 138, in save_message
+    async with session.begin():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 1867, in __aexit__
+    await greenlet_spawn(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 199, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 146, in __exit__
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 144, in __exit__
+    self.commit()
+  File "<string>", line 2, in commit
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4431, in _flush
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1408, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 513, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1630, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1839, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1979, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2335, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+[SQL: INSERT INTO telegram_messages (msg_id, ent_1, ent_2, ent_3, tar_1, tar_2, tar_3, tar_4, tar_5, tar_6, tar_7, tar_8, tar_9, stop, lev_val, lev_type, pos_type, ticker, chnl_id, msg_date) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (4088, 0.315, 0.305, None, 0.325, 0.335, 0.345, 0.355, 0.365, None, None, None, None, 0.298, None, 'cross', 'LONG', 'COIN', -1002130335326, datetime.datetime(2024, 3, 10, 18, 57, 18, tzinfo=datetime.timezone.utc))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-03-10 18:57:19,716 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 138, in save_message
+    async with session.begin():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 1867, in __aexit__
+    await greenlet_spawn(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 199, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 146, in __exit__
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 144, in __exit__
+    self.commit()
+  File "<string>", line 2, in commit
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4431, in _flush
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1408, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 513, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1630, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1839, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1979, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2335, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+[SQL: INSERT INTO telegram_messages (msg_id, ent_1, ent_2, ent_3, tar_1, tar_2, tar_3, tar_4, tar_5, tar_6, tar_7, tar_8, tar_9, stop, lev_val, lev_type, pos_type, ticker, chnl_id, msg_date) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (4089, 0.315, 0.305, None, 0.325, 0.335, 0.345, 0.355, 0.365, None, None, None, None, 0.298, None, 'cross', 'LONG', 'COIN', -1002130335326, datetime.datetime(2024, 3, 10, 18, 57, 19, tzinfo=datetime.timezone.utc))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-03-10 18:59:06,217 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 138, in save_message
+    async with session.begin():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 1867, in __aexit__
+    await greenlet_spawn(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 199, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 146, in __exit__
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 144, in __exit__
+    self.commit()
+  File "<string>", line 2, in commit
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4431, in _flush
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1408, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 513, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1630, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1839, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1979, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2335, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+[SQL: INSERT INTO telegram_messages (msg_id, ent_1, ent_2, ent_3, tar_1, tar_2, tar_3, tar_4, tar_5, tar_6, tar_7, tar_8, tar_9, stop, lev_val, lev_type, pos_type, ticker, chnl_id, msg_date) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (4090, 7.3, 7.0, None, 7.55, 7.8, 8.05, 8.3, 8.55, None, None, None, None, 6.75, None, 'cross', 'LONG', 'COIN', -1002130335326, datetime.datetime(2024, 3, 10, 18, 59, 5, tzinfo=datetime.timezone.utc))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-03-10 19:00:06,058 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 138, in save_message
+    async with session.begin():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 1867, in __aexit__
+    await greenlet_spawn(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 199, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 146, in __exit__
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 144, in __exit__
+    self.commit()
+  File "<string>", line 2, in commit
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4431, in _flush
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1408, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 513, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1630, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1839, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1979, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2335, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+[SQL: INSERT INTO telegram_messages (msg_id, ent_1, ent_2, ent_3, tar_1, tar_2, tar_3, tar_4, tar_5, tar_6, tar_7, tar_8, tar_9, stop, lev_val, lev_type, pos_type, ticker, chnl_id, msg_date) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (4091, 7.3, 7.0, None, 7.55, 7.8, 8.05, 8.3, 8.55, None, None, None, None, 6.75, None, 'cross', 'LONG', 'COIN', -1002130335326, datetime.datetime(2024, 3, 10, 19, 0, 5, tzinfo=datetime.timezone.utc))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-03-10 19:01:46,001 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 138, in save_message
+    async with session.begin():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 1867, in __aexit__
+    await greenlet_spawn(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 199, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 146, in __exit__
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 144, in __exit__
+    self.commit()
+  File "<string>", line 2, in commit
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4431, in _flush
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1408, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 513, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1630, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1839, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1979, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2335, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+[SQL: INSERT INTO telegram_messages (msg_id, ent_1, ent_2, ent_3, tar_1, tar_2, tar_3, tar_4, tar_5, tar_6, tar_7, tar_8, tar_9, stop, lev_val, lev_type, pos_type, ticker, chnl_id, msg_date) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (4092, 2.72, 2.58, None, 2.83, 3.06, 3.36, None, None, None, None, None, None, 2.51, None, 'isolated', 'LONG', 'J', -1002130335326, datetime.datetime(2024, 3, 10, 19, 1, 45, tzinfo=datetime.timezone.utc))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-03-10 19:01:47,085 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 138, in save_message
+    async with session.begin():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 1867, in __aexit__
+    await greenlet_spawn(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 199, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 146, in __exit__
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 144, in __exit__
+    self.commit()
+  File "<string>", line 2, in commit
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4431, in _flush
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1408, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 513, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1630, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1839, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1979, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2335, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+[SQL: INSERT INTO telegram_messages (msg_id, ent_1, ent_2, ent_3, tar_1, tar_2, tar_3, tar_4, tar_5, tar_6, tar_7, tar_8, tar_9, stop, lev_val, lev_type, pos_type, ticker, chnl_id, msg_date) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (4093, 2.72, 2.58, None, 2.83, 3.06, 3.36, None, None, None, None, None, None, 2.51, None, 'isolated', 'LONG', 'J', -1002130335326, datetime.datetime(2024, 3, 10, 19, 1, 46, tzinfo=datetime.timezone.utc))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-03-10 19:30:47,923 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 138, in save_message
+    async with session.begin():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 1867, in __aexit__
+    await greenlet_spawn(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 199, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 146, in __exit__
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 144, in __exit__
+    self.commit()
+  File "<string>", line 2, in commit
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4431, in _flush
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1408, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 513, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1630, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1839, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1979, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2335, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+[SQL: INSERT INTO telegram_messages (msg_id, ent_1, ent_2, ent_3, tar_1, tar_2, tar_3, tar_4, tar_5, tar_6, tar_7, tar_8, tar_9, stop, lev_val, lev_type, pos_type, ticker, chnl_id, msg_date) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (31786, 117.179216, 116.1468, None, 117.993745, 120.444653, 122.895562, 125.346471, None, None, None, None, None, 109.92884, None, None, 'LONG', 'QNT', -1001727857237, datetime.datetime(2024, 3, 10, 19, 30, 34, tzinfo=datetime.timezone.utc))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-03-10 20:22:41,007 - save_message - ERROR - Error in save_message function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 139, in save_message
+    msg_date=msg['date'] + offset,  # adjusted time
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 1867, in __aexit__
+    await greenlet_spawn(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 199, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 146, in __exit__
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 144, in __exit__
+    self.commit()
+  File "<string>", line 2, in commit
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4431, in _flush
+    with util.safe_reraise():
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1408, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 513, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1630, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1839, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1979, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2335, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 93, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 127, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\aiomysql.py", line 102, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 683, in _read_query_result
+    await result.read()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 1164, in read
+    first_packet = await self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\aiomysql\connection.py", line 652, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\.venv\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`test`.`telegram_messages`, CONSTRAINT `telegram_messages_ibfk_1` FOREIGN KEY (`chnl_id`) REFERENCES `telegram_channels` (`chnl_id`))')
+[SQL: INSERT INTO telegram_messages (msg_id, ent_1, ent_2, ent_3, tar_1, tar_2, tar_3, tar_4, tar_5, tar_6, tar_7, tar_8, tar_9, stop, lev_val, lev_type, pos_type, ticker, chnl_id, msg_date) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (13231, 47.43, 47.69, None, 47.08, 46.8, 46.61, 46.42, 46.18, 45.79, None, None, None, 48.32, None, None, 'SHORT', 'NMR', -1001505272164, datetime.datetime(2024, 3, 10, 20, 22, 33, tzinfo=datetime.timezone.utc))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)

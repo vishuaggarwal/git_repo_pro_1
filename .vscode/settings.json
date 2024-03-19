@@ -1,0 +1,5 @@
+{
+    "CodeGPT.apiKey": "Google AI Studio",
+    "cody.useContext": "blended",
+    "cody.codebase": "https://github.com/vishuaggarwal/git_repo_pro_1.git"
+}

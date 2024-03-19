@@ -1,0 +1,8 @@
+2024-03-17 20:38:38,302 - check_duplicate - ERROR - Error while checking for duplicates: module 'datetime' has no attribute 'now'
+2024-03-17 20:40:52,224 - check_duplicate - ERROR - Error while checking for duplicates: module 'datetime' has no attribute 'now'
+2024-03-17 20:43:49,701 - check_duplicate - ERROR - Error while checking for duplicates: module 'datetime' has no attribute 'now'
+2024-03-17 20:48:56,729 - check_duplicate - ERROR - Error while checking for duplicates: module 'datetime' has no attribute 'now'
+2024-03-17 20:49:48,708 - check_duplicate - ERROR - Error while checking for duplicates: module 'datetime' has no attribute 'now'
+2024-03-17 20:52:54,798 - check_duplicate - ERROR - Error while checking for duplicates: module 'datetime' has no attribute 'now'
+2024-03-17 21:03:29,405 - check_duplicate - ERROR - Error while checking for duplicates: module 'datetime' has no attribute 'now'
+2024-03-17 21:06:10,117 - check_duplicate - ERROR - Error while checking for duplicates: module 'datetime' has no attribute 'now'

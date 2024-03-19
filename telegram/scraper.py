@@ -9,56 +9,26 @@
 
 # telegram/scraper.py
 # Import process_messages from telegram.processor
-from telegram.processor import process_messages
+import traceback
+import re
+import datetime
 
-# Import init_telegram_client from telegram.client
-from telegram.client import init_telegram_client
-
-# Import asyncio for running tasks asynchronously
-import asyncio
-
-# Define asyncio scraper function to gather messages within a certain date range
-async def  scrape_history(self, channel, start_date,  end_date):
-    # Create empty list to hold messages
+async def scrape_history(client, channel_id, offset_date):
     messages = []
 
     try:
-        # Iterate over pages of messages from the telegram channel 
-        # limit by 100 messages per page, starting from the start date and reversing the order
-        async for page in self.client.iter_messages(channel, offset_date=start_date, reverse=True, limit=100):
-            # For each page, extend the list of messages with the messages from this page
-            messages.extend(page.messages)
-    except Exception as e:  # If any exception occurs while fetching messages
-        # Print out the exception along with a descriptive error message
-        print(f"Error scraping history {channel}: {e}")
+        print('DEBUG: Scraping without offset_id')
+        async for message in client.iter_messages(channel_id, offset_date=offset_date):
+            msg_dict = {
+                "id": message.id,
+                "text": message.text,
+                "chat_id": message.chat_id,
+                "date": message.date
+            }
+            messages.append(msg_dict)
 
-    # Return the list of messages
+    except Exception as e:
+        print(f"DEBUG: Error scraping history {channel_id}: {e}")
+        traceback.print_exc()
+
     return messages
-
-# Define asyncio function to scrape a channel
-async def scrape_channel(client, channel_id):
-    try:
-        # Initialize the telegram client
-        client = await init_telegram_client()
-        # Get messages from the channel
-        messages = await client.get_messages(channel_id)
-        # Process the messages
-        await process_messages(messages)
-    except Exception as e:  # If any exception occurs while scraping the channel
-        # Print out the exception along with a descriptive error message
-        print(f"Error scraping channel {channel_id}: {e}")
-
-# List of channel ids to scrape
-CHANNEL_IDS = []
-
-# Create a list of scraping tasks for each channel id
-scraping_tasks = [scrape_channel(id) for id in CHANNEL_IDS]
-
-# Define the main function to run the scraping tasks
-async def main():
-    try:
-        # Use asyncio.gather to run all scraping tasks concurrently
-        await asyncio.gather(*scraping_tasks)
-    except Exception as e:  # If any exception occurs while running the scraping tasks
-        # Print out the exception along with a descriptive error message
-        print(f"Error running scraping tasks: {e}")

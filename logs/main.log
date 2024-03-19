@@ -1,0 +1,64 @@
+2024-03-11 21:39:42,263 - main - ERROR - Error in main function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 69, in main
+    messages = await scrape_history(client, channel_id, start_date_dt, end_date_dt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\scraper.py", line 25, in scrape_history
+    stored_ids = json.load(f)
+                 ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-03-11 21:39:42,329 - main - ERROR - Error in main function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 69, in main
+    messages = await scrape_history(client, channel_id, start_date_dt, end_date_dt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\scraper.py", line 25, in scrape_history
+    stored_ids = json.load(f)
+                 ^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-03-11 22:33:59,987 - main - ERROR - Error in main function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 69, in main
+    messages = await scrape_history(client, channel_id, start_date_dt, end_date_dt)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: scrape_history() takes 2 positional arguments but 4 were given
+2024-03-11 22:33:59,988 - main - ERROR - Error in main function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 69, in main
+    messages = await scrape_history(client, channel_id, start_date_dt, end_date_dt)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: scrape_history() takes 2 positional arguments but 4 were given
+2024-03-11 22:34:26,462 - main - ERROR - Error in main function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 69, in main
+    messages = await scrape_history(client, channel_id, start_date_dt, end_date_dt)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: scrape_history() takes 2 positional arguments but 4 were given
+2024-03-11 22:34:26,463 - main - ERROR - Error in main function: 
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\main.py", line 69, in main
+    messages = await scrape_history(client, channel_id, start_date_dt, end_date_dt)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: scrape_history() takes 2 positional arguments but 4 were given

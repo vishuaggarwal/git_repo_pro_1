@@ -1,71 +1,90 @@
+# Telegram/client.py
+
 # This code is initializing a Telegram client using the Telethon 
 # library, and then it sets up a listener for new messages, which 
 # it prints to the console. The API credentials and session key are 
 # imported from a config file.
 
-
-# Telegram/client.py
-
 # Import necessary modules
 import asyncio
-import keyring
+import os
+from getpass import getpass
 from telethon import TelegramClient, events
+from telethon.errors import SessionPasswordNeededError
+from telethon.network import ConnectionTcpAbridged
 from telethon.sessions import StringSession
+
 # Import Telegram API credentials from the config file
-from config import api_id, api_hash, session_key
+from config import api_id, api_hash
 
-# Uncomment the following section if you are storing API credentials in a keyring.
-# Retrieve API credentials from the keyring
-# api_id = keyring.get_password('telegram', api_id)
-# api_hash = keyring.get_password('telegram', api_hash)
-# session_key = keyring.get_password('telegram', session_key)
+# Import logger from log_config
+from log_config import configure_logger
 
-# Print API credentials to check if they are correct
-# print(f'your API ID is {api_id}')
-# print(f'your API HASH is {api_hash}')
+# Set up logging
+init_logger = configure_logger('init_telegram_client', 'init_telegram_client.log')
+main_logger = configure_logger('main_telegram_client', 'main_telegram_client.log')
 
-# Asynchronous function to initialize a Telegram client
 async def init_telegram_client():
-    # Create a new Telegram session
-    session = StringSession(session_key)
+    session_file = 'session.txt'
+    if os.path.exists(session_file):
+        with open(session_file, 'r') as f:
+            session_str = f.read()
+        session = StringSession(session_str)
+    else:
+        session = StringSession()
+
     try:
         print('Initializing Telegram client...')
-        # Initialize Telegram client with the provided session and API credentials
         client = TelegramClient(session, api_id, api_hash)
-        # Connect to the Telegram server
         await client.connect()
-        # Raise an error if failed to connect to the Telegram server
+
         if not client.is_connected():
             raise IOError("Failed to connect")
-        # Start the Telegram client
-        await client.start()
+
+        if not await client.is_user_authorized():
+            phone = input("Enter phone number: ")
+            await client.send_code_request(phone)
+            verification_code = input("Enter verification code: ")
+            await client.sign_in(phone, verification_code)
+
+        with open(session_file, 'w') as f:
+            f.write(client.session.save())
+
         print('Telegram client initialized!')
-        # Return the initialized Telegram client
         return client
+    except SessionPasswordNeededError:
+        await client.sign_in(password=getpass())
     except Exception as e:
-        print(f'Telegram client initialization failed: {e}')
-        # Return None when client initialization fails
-        return None  
+        init_logger.error("Error in init_telegram_client function: ", exc_info=True)
+        return None
 
-# Main asynchronous function
 async def main():
-    # Initialize Telegram client
-    client = await init_telegram_client()
-    # Stop the execution if client initialization failed
-    if not client:
-        print('Exiting due to failure in initialization of Telegram client')
-        return
-    # Add event handler for new incoming messages
-    @client.on(events.NewMessage)
-    async def handle_new_message(event):
-        # Print the text of the new message
-        print(f'New message: {event.raw_text}')
-    # Start the client and run it until disconnected
-    await client.run_until_disconnected()
+    while True:
+        client = await init_telegram_client()
 
-# Main entry point of the script
+        if not client:
+            print('Initialization failed. Retrying in 30 seconds...')
+            await asyncio.sleep(30)
+            continue
+
+        @client.on(events.NewMessage)
+        async def handle_new_message(event):
+            try:
+                print(f'New message: {event.raw_text}')
+            except Exception as e:
+                main_logger.error("Error in handle_new_message: ", exc_info=True)
+
+        print('Client is running...')
+        await client.run_until_disconnected()
+        print('Client disconnected. Retrying in 30 seconds...')
+        await asyncio.sleep(30)
+
 if __name__ == '__main__':
-    # Start the event loop
     loop = asyncio.get_event_loop()
-    # Execute the main function until it is complete
     loop.run_until_complete(main())
+
+
+#action to take in future related to this script
+    
+    # Store the sessio_key in Database and load it through
+    # dotenv

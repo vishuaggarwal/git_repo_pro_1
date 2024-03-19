@@ -1,0 +1,679 @@
+2024-03-11 15:08:56,400 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:08:56,404 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:08:56,405 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:08:56,407 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:08:56,408 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:08:56,409 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:10:19,969 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:10:19,969 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:10:19,969 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:10:19,970 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:10:19,970 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:10:19,971 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:14:15,261 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:14:15,262 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:14:15,262 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:14:15,262 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:14:15,263 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:14:15,263 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:22:59,111 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:22:59,112 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:22:59,112 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:22:59,112 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:22:59,113 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:22:59,113 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:34:57,986 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **#bnb usdt**** ****#bnb**** exactly going same as expected and uched the resistance zone as per our previous update. we earned 20% safe s without any leverage and 200% good s with 10x leverage ****httars //www.tradingview.com/x/eoaofnfa/**, chat id: -1001203300637
+2024-03-11 15:36:22,560 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 224, in filter_messages
+    statement, data = preprocess_statement(statement)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 134, in preprocess_statement
+    parts[1] = parts[1].replace('tar', '')
+               ~~~~~^^^
+IndexError: list index out of range
+2024-03-11 15:37:24,726 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: long #wavesusdt from [ 3.6086] stop [ 3.5905] 30m tf. the coin has formed a cascade of many resistance levels behind each of which i expect see accumulated liquidity. the formation also has the form of an ascending triangle which indicates a limit entryer who is pushing the price the level in volumes. i consider the traded movement near the resistance the acceleration of the tape of transactions and the impulse breakdown. youtube cscalp [here] channel. [open the chart] | #trendbreakout, chat id: -1001774567944
+2024-03-11 15:37:59,123 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:37:59,124 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:37:59,124 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:37:59,124 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:37:59,125 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:37:59,125 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:40:32,155 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **alan master channel ** gc pair #avaxusdt direction long tar hit tal 12.50%, chat id: -1001666782853
+2024-03-11 15:44:38,247 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:44:38,247 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:44:38,248 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:44:38,248 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:44:38,248 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:44:38,248 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:53:20,493 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:53:20,493 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:53:20,494 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:53:20,494 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:53:20,495 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 15:53:20,496 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:02:49,298 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:02:49,299 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:02:49,299 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:02:49,299 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:02:49,300 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:02:49,300 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:04:14,754 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: long #vetusdt from [ 0.05] stop [ 0.04803] 1h tf. after a long global growth the instrument went in correction forming a cascade of levels in the form of an inclined resistance. we formed the fourth approach impulsively as a result of which i expect a spight pullback the 3h imbalance zone. also as part of the correction it is possible observe a drop in volumes and manipulation of local lows which indicates that a large player is gaining a position. i recommend entrying conservatively after the breakdown and retest of the trend. discord server cscalp [here]. [open the chart] | #spopebreakout, chat id: -1001774567944
+2024-03-11 16:09:33,123 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 224, in filter_messages
+    statement, data = preprocess_statement(statement)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 134, in preprocess_statement
+    parts[1] = parts[1].replace('tar', '')
+               ~~~~~^^^
+IndexError: list index out of range
+2024-03-11 16:13:54,375 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:13:54,376 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:13:54,376 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:13:54,377 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:13:54,378 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:13:54,378 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:18:46,589 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:18:46,590 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:18:46,590 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:18:46,590 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:18:46,591 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:18:46,591 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:19:45,101 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 224, in filter_messages
+    statement, data = preprocess_statement(statement)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 134, in preprocess_statement
+    parts[1] = parts[1].replace('tar', '')
+               ~~~~~^^^
+IndexError: list index out of range
+2024-03-11 16:23:47,391 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:23:47,392 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:23:47,392 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:23:47,392 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:23:47,393 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:23:47,393 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:26:39,289 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:26:39,290 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:26:39,290 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:26:39,290 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:26:39,291 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:26:39,291 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:26:57,420 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **new trade. theta long **entry 3.5469 3.4213 tar for fixation 3.5767 3.6038 3.6580 stop at your discretions. i'm without stop yet **only 1% of the deposit! it is very important!**, chat id: -1001566185302
+2024-03-11 16:27:04,454 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **new trade. theta long **entry 3.5469 3.4213 tar for fixation 3.5767 3.6038 3.6580 stop at your discretions. i'm without stop yet **only 1% of the deposit! it is very important!**, chat id: -1001204424021
+2024-03-11 16:29:37,907 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: btcusdt short httars //t.me/+qe i7cbyulxkmzbk bnbusdt short hts //t.me/+q2tngbgirxs5nwq1, chat id: -1001594522150
+2024-03-11 16:31:24,992 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:31:24,993 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:31:24,994 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:31:24,994 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:31:24,995 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:31:24,995 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:33:07,906 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:33:07,907 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:33:07,907 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:33:07,908 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:33:07,908 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:33:07,908 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:35:04,315 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:35:04,316 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:35:04,316 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:35:04,317 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:35:04,317 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:35:04,317 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:39:14,174 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: long #minausdt from [ 1.5552] stop [ 1.5368] 2h tf. the mina asset is currently trading at an increased trading volume showing upward movement dynamics. there is high activity on the part of entryers. the price has formed a local cascade of highs with a gradual compression wards them. i expect the continuation of the upward structure and the breakdown of the marked cascade with a good risk ratio. news cscalp [en]/[ru] channel. [open the chart] | #trendbreakout, chat id: -1001774567944
+2024-03-11 16:40:03,309 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **price for vip membership month 99 year 200 lifetime 300 vip membership facility 10 signals daily future +spot technical analysis fundamental analysis on chain analysis entrys/tars/spes trading strategies + instructions for beginners admin support + cornix bot supported update before change of market direction. contact ****@whiteroseadmin**** **, chat id: -1001818427009
+2024-03-11 16:42:45,223 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:42:45,224 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:42:45,224 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:42:45,224 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:42:45,225 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:42:45,225 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:47:51,729 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:47:51,729 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:47:51,730 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:47:51,730 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:47:51,731 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:47:51,732 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:51:17,571 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:51:17,571 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:51:17,572 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:51:17,572 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:51:17,573 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:51:17,573 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:54:36,319 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:54:36,319 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:54:36,320 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:54:36,320 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:54:36,320 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:54:36,321 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 16:55:15,353 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **alan master channel ** gc pair #sxpusdt direction long tar hit tal 12.54%, chat id: -1001666782853
+2024-03-11 19:17:56,860 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **now you can copy trades of whales and pro traders! ** **fujitrades is dubai analytics company which specilizies in cryp forex and prop trading. **average income for february over **160%** in spot up **3300%** with 20x leverage track record of public deals httars //t.me/fujitrades com/443 **everyone can try private signals for free by the link > **[**join**], chat id: -1001836953820
+2024-03-11 19:19:55,674 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **now you can copy trades of whales and pro traders! ** **fujitrades is dubai analytics company which specilizies in cryp forex and prop trading. **average income for february over **160%** in spot up **3300%** with 20x leverage track record of public deals httars //t.me/fujitrades com/443 **everyone can try private signals for free by the link > **[**join**], chat id: -1001884616660
+2024-03-11 19:20:21,731 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **now you can copy trades of whales and pro traders! ** **fujitrades is dubai analytics company which specilizies in cryp forex and prop trading. **average income for february over **160%** in spot up **3300%** with 20x leverage track record of public deals httars //t.me/fujitrades com/443 **everyone can try private signals for free by the link > **[**join**], chat id: -1001727975992
+2024-03-11 19:21:03,547 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **now you can copy trades of whales and pro traders! ** **fujitrades is dubai analytics company which specilizies in cryp forex and prop trading. **average income for february over **160%** in spot up **3300%** with 20x leverage track record of public deals httars //t.me/fujitrades com/443 **everyone can try private signals for free by the link > **[**join**], chat id: -1001967985329
+2024-03-11 19:21:57,409 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **eth/usdt short leverage cross 25x entry ** tar ** stop ** ****hts //t.me/+qluswbqzngy4yji0**** join fast **, chat id: -1002078531832
+2024-03-11 19:21:57,417 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **now you can copy trades of whales and pro traders! ** **fujitrades is dubai analytics company which specilizies in cryp forex and prop trading. **average income for february over **160%** in spot up **3300%** with 20x leverage track record of public deals httars //t.me/fujitrades com/443 **everyone can try private signals for free by the link > **[**join**], chat id: -1001888365413
+2024-03-11 19:22:19,080 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **now you can copy trades of whales and pro traders! ** **fujitrades is dubai analytics company which specilizies in cryp forex and prop trading. **average income for february over **160%** in spot up **3300%** with 20x leverage track record of public deals httars //t.me/fujitrades com/443 **everyone can try private signals for free by the link > **[**join**], chat id: -1001946508491
+2024-03-11 19:24:34,023 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **#dydx**** short** [full setup details is here], chat id: -1001155784837
+2024-03-11 19:30:55,050 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 224, in filter_messages
+    statement, data = preprocess_statement(statement)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 134, in preprocess_statement
+    parts[1] = parts[1].replace('tar', '')
+               ~~~~~^^^
+IndexError: list index out of range
+2024-03-11 19:31:46,684 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **alan master channel ** gc pair #sxpusdt direction long tar hit tal 24.99%, chat id: -1001666782853
+2024-03-11 19:37:47,468 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **alan master channel ** gc pair #stmxusdt direction long tar hit tal 6.20%, chat id: -1001666782853
+2024-03-11 19:38:40,940 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: signal id #1406 coin 1inch/usdt direction long tar 0.6275 0.634 0.64 0.65 0.66 45.1% binance killers, chat id: -1001322515232
+2024-03-11 19:42:25,359 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: important remember have entry orders in place average this trade's entry and take 30% of s in the first tar. after taking s move sps entry or breakeven levels. keep in mind current market conditions and risk management. refer our complete binance killers vip trading and risk management guide v2.0 for more information on how take each trade and maximize s. stay safe killers! binance killers, chat id: -1001322515232
+2024-03-11 19:54:17,111 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 224, in filter_messages
+    statement, data = preprocess_statement(statement)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 134, in preprocess_statement
+    parts[1] = parts[1].replace('tar', '')
+               ~~~~~^^^
+IndexError: list index out of range
+2024-03-11 19:54:17,466 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 224, in filter_messages
+    statement, data = preprocess_statement(statement)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 134, in preprocess_statement
+    parts[1] = parts[1].replace('tar', '')
+               ~~~~~^^^
+IndexError: list index out of range
+2024-03-11 19:54:17,892 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 224, in filter_messages
+    statement, data = preprocess_statement(statement)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 134, in preprocess_statement
+    parts[1] = parts[1].replace('tar', '')
+               ~~~~~^^^
+IndexError: list index out of range
+2024-03-11 19:54:18,201 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 224, in filter_messages
+    statement, data = preprocess_statement(statement)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 134, in preprocess_statement
+    parts[1] = parts[1].replace('tar', '')
+               ~~~~~^^^
+IndexError: list index out of range
+2024-03-11 19:54:22,587 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 224, in filter_messages
+    statement, data = preprocess_statement(statement)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 134, in preprocess_statement
+    parts[1] = parts[1].replace('tar', '')
+               ~~~~~^^^
+IndexError: list index out of range
+2024-03-11 19:54:23,050 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 224, in filter_messages
+    statement, data = preprocess_statement(statement)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 134, in preprocess_statement
+    parts[1] = parts[1].replace('tar', '')
+               ~~~~~^^^
+IndexError: list index out of range
+2024-03-11 19:54:30,451 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 224, in filter_messages
+    statement, data = preprocess_statement(statement)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 134, in preprocess_statement
+    parts[1] = parts[1].replace('tar', '')
+               ~~~~~^^^
+IndexError: list index out of range
+2024-03-11 19:54:30,904 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 224, in filter_messages
+    statement, data = preprocess_statement(statement)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 134, in preprocess_statement
+    parts[1] = parts[1].replace('tar', '')
+               ~~~~~^^^
+IndexError: list index out of range
+2024-03-11 19:54:47,486 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: avax long tar also done, chat id: -1001744711450
+2024-03-11 19:55:10,138 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: avax long tar also done, chat id: -1001543427114
+2024-03-11 19:55:35,973 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **alan master channel ** gc pair #avaxusdt direction long tar hit tal 50.00%, chat id: -1001666782853
+2024-03-11 19:56:25,419 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **say goodbye loss vip channel free for limited time ****httars //t.me/+04xaivc wnhkmdy1**** fast join **, chat id: -1002078531832
+2024-03-11 20:03:51,304 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 224, in filter_messages
+    statement, data = preprocess_statement(statement)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 134, in preprocess_statement
+    parts[1] = parts[1].replace('tar', '')
+               ~~~~~^^^
+IndexError: list index out of range
+2024-03-11 20:04:25,585 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 224, in filter_messages
+    statement, data = preprocess_statement(statement)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 134, in preprocess_statement
+    parts[1] = parts[1].replace('tar', '')
+               ~~~~~^^^
+IndexError: list index out of range
+2024-03-11 20:25:29,889 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: ** ****#arkm****/usdt ** **exchanges ** binance futures **signal type ** regular **leverage ** cross **entry ** 2.4233 **tar ** 2.46 2.48 2.51 2.54 2.57 2.61 **sp ** 10% @digileakbot, chat id: -1001620763438
+2024-03-11 20:25:29,902 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: coin #arkm/usdt *** exchange >** binance futures **signal type ** regular **leverage ** cross entry 2.4233 ** tar ** 2.46 2.48 2.51 2.54 2.57 2.61 stop 10% **binance pumps**, chat id: -1001622651246
+2024-03-11 20:25:31,207 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: ** ****#arkm****/usdt ** **exchanges ** binance futures **signal type ** regular **leverage ** cross **entry ** 2.4233 **tar ** 2.46 2.48 2.51 2.54 2.57 2.61 **sp ** 10%, chat id: -1001971948809
+2024-03-11 20:28:45,389 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: ** ****#aave****/usdt ** **exchanges ** binance futures **signal type ** regular **leverage ** cross **entry ** 134.69 **tar ** 136.71 138.06 139.4 141.42 142.77 144.79 **sp ** 10% @digileakbot, chat id: -1001620763438
+2024-03-11 20:28:57,849 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: ** ****#ace****/usdt ** **exchanges ** binance futures **signal type ** regular **leverage ** cross **entry ** 13.1195 **tar ** 12.92 12.79 12.66 12.46 12.33 12.14 **sp ** 10% @digileakbot, chat id: -1001620763438
+2024-03-11 20:28:57,852 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: coin #ace/usdt *** exchange >** binance futures **signal type ** regular **leverage ** cross entry 13.1195 ** tar ** 12.92 12.79 12.66 12.46 12.33 12.14 stop 10% **binance pumps**, chat id: -1001622651246
+2024-03-11 20:28:59,127 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: ** ****#ace****/usdt ** **exchanges ** binance futures **signal type ** regular **leverage ** cross **entry ** 13.1195 **tar ** 12.92 12.79 12.66 12.46 12.33 12.14 **sp ** 10%, chat id: -1001971948809
+2024-03-11 20:29:33,566 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: coin #ada/usdt *** exchange >** binance futures **signal type ** regular **leverage ** cross entry 0.7354 ** tar ** 0.7244 0.717 0.7097 0.6986 0.6913 0.6802 stop 10% **binance pumps**, chat id: -1001622651246
+2024-03-11 20:29:34,100 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: ** ****#ada****/usdt ** **exchanges ** binance futures **signal type ** regular **leverage ** cross **entry ** 0.7354 **tar ** 0.7244 0.717 0.7097 0.6986 0.6913 0.6802 **sp ** 10% @digileakbot, chat id: -1001620763438
+2024-03-11 20:29:35,372 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: ** ****#ada****/usdt ** **exchanges ** binance futures **signal type ** regular **leverage ** cross **entry ** 0.7354 **tar ** 0.7244 0.717 0.7097 0.6986 0.6913 0.6802 **sp ** 10%, chat id: -1001971948809
+2024-03-11 20:30:00,038 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: ****** xrp****/usdt ** leverage 10x **tar** 0.5116 0.52 0.53 0.55 0.57 0.60 0.65 ** 313.1% ** bitcoin bullets trading, chat id: -1001946508491
+2024-03-11 20:30:00,046 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: ****** xrp****/usdt ** leverage 10x **tar** 0.5116 0.52 0.53 0.55 0.57 0.60 0.65 ** 313.1% ** bitcoin bullets trading, chat id: -1001369388712
+2024-03-11 20:30:00,057 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: ****** xrp****/usdt ** leverage 10x **tar** 0.5116 0.52 0.53 0.55 0.57 0.60 0.65 ** 313.1% ** bitcoin bullets trading, chat id: -1001508555992
+2024-03-11 20:30:00,061 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: coin #agix/usdt *** exchange >** binance futures **signal type ** regular **leverage ** cross entry 1.2448 ** tar ** 1.23 1.21 1.2 1.18 1.17 1.15 stop 10% **binance pumps**, chat id: -1001622651246
+2024-03-11 20:30:25,108 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: 24 hours left until our big pump ! **tar +10.000 % ** **vip at have the option entry the coin before the pump and it's unbelievable how much money our vip exclusive members make ** !!** entry vip **@whales vipump** **!!, chat id: -1001890625146
+2024-03-11 20:30:50,002 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: coin #agix/usdt *** exchange >** binance futures **signal type ** regular **leverage ** cross entry 1.2439 ** tar ** 1.23 1.21 1.2 1.18 1.17 1.15 stop 10% **binance pumps**, chat id: -1001622651246
+2024-03-11 20:30:50,019 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: ** ****#agix****/usdt ** **exchanges ** binance futures **signal type ** regular **leverage ** cross **entry ** 1.2439 **tar ** 1.23 1.21 1.2 1.18 1.17 1.15 **sp ** 10%, chat id: -1001971948809
+2024-03-11 20:56:19,507 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: long #strkusdt from [ 2.5279] stop [ 2.5193] 30m tf. the strk asset shows movement in an uptrend where minimum prices are gradually rising. during the growth a bullish triangle pattern was formed indicating the presence of a large participant in the coin moving the price. at the same time there is a cascade of resistance levels that are tested by several uches with a pool of liquidity behind them. i expect see a gradual approach the levels with an increase in trading volumes and activity in the order book before the breakdown. news cscalp [en]/[ru] channel. [open the chart] | #trendbreakout, chat id: -1001774567944
+2024-03-11 20:59:09,871 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **signal id #1376 coin **** zrx****/usdt direction long** * * * * * * * * * * * * * * * * * * * * * * * * * * * * tar 0.3485 0.3520 0.36 0.37 0.39 0.41 0.44 0.50 0.55 10 0.0.62 **401% ** * * * * * * * * * * * * * * * * * * * * * * * * * * * * bitcoin assassins, chat id: -1001197643929
+2024-03-11 21:02:54,394 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **xmr/usdt** cross **entry ** 111.3 ** tar ** 112.41 113.53 114.64 115.75 116.86 117.98 the moon **sp ** 100.17, chat id: -1001973256957
+2024-03-11 21:02:54,406 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: ** pair xmr/usdt** direction long mode cross 20x entry 111.3 ** tar ** 112.41 113.53 114.64 115.75 116.86 117.98 invalidation price 100.17 [american cryp], chat id: -1001808087323
+2024-03-11 21:02:54,414 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: ** pair xmr/usdt** direction long mode cross 20x entry 111.3 ** tar ** 112.41 113.53 114.64 115.75 116.86 117.98 invalidation price 100.17 [american cryp], chat id: -1001808087323
+2024-03-11 21:06:25,809 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: long #ctsiusdt from [ 0.386] stop [ 0.362] 1h tf. globally the instrument is in an upward movement structure we observe the formation of a symmetrical triangle pattern on the senior tf the entryer bought the price well from support trading volumes decreased noticeably on the current ones we observe compression and pro trading under resistance a large pool of liquidity remains above the left cascade i expect see a breakdown of the pattern in the long with consolidation and further price growth in the er's area of interest at around 0.44 free educational trading course [here]. [open the chart] | #triangle, chat id: -1001774567944
+2024-03-11 21:06:27,453 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 224, in filter_messages
+    statement, data = preprocess_statement(statement)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 134, in preprocess_statement
+    parts[1] = parts[1].replace('tar', '')
+               ~~~~~^^^
+IndexError: list index out of range
+2024-03-11 21:08:00,719 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: pair myria/usdt exchanges bybit [link] long cross entry 0.013037 s 0.01317 0.01330 0.01343 0.01356 0.01369 0.01382 invalidation price 0.01173 [american cryp], chat id: -1001808087323
+2024-03-11 21:08:03,334 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: pair flr/usdt exchanges bybit [link] long cross entry 0.04069 s 0.04110 0.04150 0.04191 0.04232 0.04272 0.04313 invalidation price 0.03662 [american cryp], chat id: -1001808087323
+2024-03-11 21:08:30,978 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: pair mi/usdt exchanges bybit [link] long cross entry 1.204 s 1.21604 1.22808 1.24012 1.25216 1.26420 1.27624 invalidation price 1.08360 [american cryp], chat id: -1001808087323
+2024-03-11 21:08:57,508 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: pair core/usdt exchanges bybit [link] long cross entry 0.6988 s 0.70579 0.71278 0.71976 0.72675 0.73374 0.74073 invalidation price 0.62892 [american cryp], chat id: -1001808087323
+2024-03-11 21:12:26,638 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **alan master channel ** gc pair #xrpusdt direction long tar hit tal 12.51%, chat id: -1001666782853
+2024-03-11 21:16:48,079 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **alan master channel ** gc pair #xrpusdt direction long tar hit tal 25.03%, chat id: -1001666782853
+2024-03-11 21:19:48,786 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:19:48,786 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:19:48,786 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:19:48,787 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:19:48,787 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:19:48,787 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:00,857 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:00,857 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:00,857 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:00,858 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:00,858 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:00,858 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:12,357 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:12,357 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:12,358 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:12,358 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:12,359 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:12,360 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:25,405 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:25,406 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:25,406 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:25,406 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:25,406 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:25,407 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:37,076 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:37,077 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:37,077 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:37,077 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:37,078 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:37,078 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:48,934 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:48,935 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:48,935 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:48,935 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:48,936 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:20:48,936 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:00,624 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:00,624 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:00,624 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:00,625 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:00,625 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:00,625 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:12,324 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:12,324 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:12,325 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:12,325 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:12,325 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:12,326 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:23,966 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:23,966 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:23,967 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:23,967 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:23,967 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:21:23,968 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:22:47,800 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:22:47,800 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:22:47,801 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:22:47,801 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:22:47,801 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:22:47,801 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:22:59,539 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:22:59,539 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:22:59,540 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:22:59,540 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:22:59,540 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:22:59,541 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:23:11,032 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:23:11,032 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:23:11,032 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:23:11,033 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:23:11,033 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:23:11,033 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:10,546 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:10,546 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:10,546 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:10,547 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:10,547 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:10,547 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:26,971 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:26,972 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:26,972 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:26,973 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:26,974 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:26,974 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:43,671 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:43,671 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:43,672 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:43,672 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:43,672 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:43,672 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:59,475 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:59,476 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:59,476 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:59,476 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:59,477 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:44:59,477 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:16,200 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:16,200 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:16,200 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:16,200 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:16,201 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:16,201 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:31,683 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:31,684 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:31,685 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:31,686 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:31,687 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:31,687 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:49,355 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:49,355 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:49,355 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:49,356 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:49,356 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:45:49,356 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:46:05,488 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:46:05,488 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:46:05,488 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:46:05,489 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:46:05,489 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:46:05,489 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:46:20,788 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:46:20,788 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:46:20,788 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:46:20,789 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:46:20,789 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 21:46:20,789 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:01:59,489 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:01:59,490 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:01:59,490 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:01:59,490 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:01:59,491 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:01:59,491 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:16,472 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:16,473 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:16,474 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:16,474 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:16,475 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:16,476 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:33,198 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:33,198 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:33,198 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:33,199 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:33,199 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:33,199 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:49,405 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:49,405 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:49,405 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:49,406 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:49,406 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:02:49,406 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:03:05,263 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:03:05,263 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:03:05,264 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:03:05,264 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:03:05,265 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:03:05,265 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:13:54,555 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:13:54,589 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:13:54,589 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:13:54,599 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: btc /usdt** ******** trade type short ******** ******** leverage 20x ******** entry ** [**[ click here ]**] **sp *** ** [**[ check yourself ]**], chat id: -1002130335326
+2024-03-11 22:13:58,355 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:14:15,524 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:14:15,550 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:14:15,553 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:14:15,559 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: btc /usdt** ******** trade type short ******** ******** leverage 20x ******** entry ** [**[ click here ]**] **sp *** ** [**[ check yourself ]**], chat id: -1002130335326
+2024-03-11 22:14:18,762 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:14:36,103 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:14:36,136 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:14:36,137 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:14:36,151 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: btc /usdt** ******** trade type short ******** ******** leverage 20x ******** entry ** [**[ click here ]**] **sp *** ** [**[ check yourself ]**], chat id: -1002130335326
+2024-03-11 22:14:40,275 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:14:56,861 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:14:56,890 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:14:56,891 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:14:56,896 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: btc /usdt** ******** trade type short ******** ******** leverage 20x ******** entry ** [**[ click here ]**] **sp *** ** [**[ check yourself ]**], chat id: -1002130335326
+2024-03-11 22:15:00,522 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:15:24,198 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:15:24,233 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:15:24,234 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:15:24,239 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: btc /usdt** ******** trade type short ******** ******** leverage 20x ******** entry ** [**[ click here ]**] **sp *** ** [**[ check yourself ]**], chat id: -1002130335326
+2024-03-11 22:15:28,290 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:15:45,868 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:15:45,952 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:15:45,953 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:15:45,967 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: btc /usdt** ******** trade type short ******** ******** leverage 20x ******** entry ** [**[ click here ]**] **sp *** ** [**[ check yourself ]**], chat id: -1002130335326
+2024-03-11 22:15:49,502 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:16:06,901 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:16:06,933 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:16:06,933 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:16:06,938 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: btc /usdt** ******** trade type short ******** ******** leverage 20x ******** entry ** [**[ click here ]**] **sp *** ** [**[ check yourself ]**], chat id: -1002130335326
+2024-03-11 22:16:10,582 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:16:27,959 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:16:27,992 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:16:27,994 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:16:28,004 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: btc /usdt** ******** trade type short ******** ******** leverage 20x ******** entry ** [**[ click here ]**] **sp *** ** [**[ check yourself ]**], chat id: -1002130335326
+2024-03-11 22:16:31,508 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:16:48,982 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:16:49,017 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:16:49,018 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: **vip trade id ****#r123** **pair **** ada****/usdt **direction long tar 0.245 0.250 0.257 0.265 0.29 0.33 0.38 0.44 0.52 ** 620.7% ** yours truly fed. russian insiders, chat id: -1002130335326
+2024-03-11 22:16:49,027 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: btc /usdt** ******** trade type short ******** ******** leverage 20x ******** entry ** [**[ click here ]**] **sp *** ** [**[ check yourself ]**], chat id: -1002130335326
+2024-03-11 22:16:54,215 - main_telegram_filter - ERROR - Error processing message in filter_messages function
+Traceback (most recent call last):
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 220, in filter_messages
+    has_keyword = check_statement(message['text'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alaknanda\Desktop\python\Projects\vue_proj\git_proj\pro_1\telegram\filters.py", line 72, in check_statement
+    if IGNORED_MSG_RE.findall(statement):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-03-11 22:26:07,038 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:07,039 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:07,039 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:07,039 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:07,040 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:07,040 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:23,431 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:23,431 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:23,432 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:23,432 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:23,432 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:23,432 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:39,375 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:39,375 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:39,376 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:39,376 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:39,376 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:39,376 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:54,863 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:54,864 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:54,864 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:54,864 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:54,865 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:26:54,865 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:27:10,942 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:27:10,942 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:27:10,943 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:27:10,943 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:27:10,943 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
+2024-03-11 22:27:10,943 - main_telegram_filter - ERROR - Incomplete data from process_statement(), statement: okx futures #near/usdt closed at trailing stop after reaching tar 20.5276%, chat id: -1002071547337
